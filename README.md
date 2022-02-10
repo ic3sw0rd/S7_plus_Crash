@@ -53,9 +53,14 @@ Due to the leading position in the market, Siemens PLCs have been major research
 The previous Siemens PLC vulnerabilities are found independently whereas this time they are discovered in batch. Up to now, there have been 5 vulnerabilities repaired and several more will be addressed in the future. These 5 vulnerabilities are found in OMS+， the core component of Siemens S7 communication protocol, which is used in several Siemens products to implement its private protocol. The following screenshot displays the OMS+ information used in the S7-1200 series V4.5.1 firmware. The updated version is V4.5.2 and the OMS+ version is 12.35.8.
 
  ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/222.png)
+ 
 OMS+ information used in V4.5.1 firmware
 
+
+
+
  ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/333.png)
+ 
 OMS+ information used in V4.5.2 firmware
 
 
