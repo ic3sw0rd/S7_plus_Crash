@@ -37,7 +37,7 @@ It is worth noting that although these three vulnerabilities described in the of
 
 Siemens is the world's leading company in the field of electrical engineering whose products is a mainstream in the field of industrial control equipment, widely used in electric power industry, petroleum and petrochemical, rail transportation, intelligent manufacturing, iron and steel metallurgy, and other critical infrastructures in the global scope. The market share of automation equipment ranked first. Multiple vulnerabilities discovered this time affect the following products:
 
- ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/master/img/111.png)
+ ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/111.png)
  
 These products covers many Siemens industrial automation fields, such as drive controllers, S7-1200/S7-1500, PLC simulators, distributed controllers, soft PLCs, etc.
 
@@ -52,10 +52,10 @@ Due to the leading position in the market, Siemens PLCs have been major research
 
 The previous Siemens PLC vulnerabilities are found independently whereas this time they are discovered in batch. Up to now, there have been 5 vulnerabilities repaired and several more will be addressed in the future. These 5 vulnerabilities are found in OMS+， the core component of Siemens S7 communication protocol, which is used in several Siemens products to implement its private protocol. The following screenshot displays the OMS+ information used in the S7-1200 series V4.5.1 firmware. The updated version is V4.5.2 and the OMS+ version is 12.35.8.
 
- ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/master/img/222.png)
+ ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/222.png)
 OMS+ information used in V4.5.1 firmware
 
- ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/master/img/333.png)
+ ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/333.png)
 OMS+ information used in V4.5.2 firmware
 
 
@@ -63,13 +63,13 @@ OMS+ information used in V4.5.2 firmware
 
 Two of the vulnerabilities disclosed this time can still lead to a remote attack even with the PLC access protection strategy enabled. The purpose of the access protection policy is to prevent unauthorized sensitive operations and there are multiple levels of access control protection in Siemens SIMATIC PLC series, as shown in the screenshot below:
 
- ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/master/img/444.png)
+ ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/444.png)
 Even with the highest level enabled (complete protection), the attack can still succeed.
 
 ## 3.	These vulnerabilities can be exploited regardless the secure communication function(TLS encryption communication) is enabled or not
 In May 2021, Siemens released the firmware version V4.5.0 (S7-1200) and TIA V17, which introduced the secure communication mechanism, aiming to make the communication in the industrial scenario more secure and reliable. Even with this new secure mode enabled, the vulnerability will cause the PLC ending up in a critical failure state. Currently, traditional security products like firewalls or other intrusion detection systems do not support this Siemens secure communication protocol, which means most of the attacks cannot be identified. The best countermeasure is to upgrade the firmware to the latest version.
 
- ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/master/img/555.png)
+ ![](https://github.com/ic3sw0rd/S7_plus_Crash/raw/main/img/555.png)
 
 # Mitigations and solutions
 
